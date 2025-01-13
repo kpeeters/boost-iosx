@@ -30,7 +30,7 @@ fi
 if [[ ! -f "$BUILD_DIR/frameworks.built" ]]; then
 
 if [[ ! -f $BOOST_NAME.tar.bz2 ]]; then
-	curl -L https://boostorg.jfrog.io/artifactory/main/release/$BOOST_VER/source/$BOOST_NAME.tar.bz2 -o $BOOST_NAME.tar.bz2
+	curl -L https://archives.boost.io/release/$BOOST_VER/source/$BOOST_NAME.tar.bz2 -o $BOOST_NAME.tar.bz2
 	if [[ -d boost ]]; then
 		rm -rf boost
 	fi
